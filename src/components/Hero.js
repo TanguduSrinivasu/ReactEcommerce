@@ -18,7 +18,7 @@ const Hero = ({heroapi}) => {
                 <button type='button' className='px-7 py-1 active:scale-90 rounded-xl sm:text-sm bg-slate-200 my-5'>{btntext}</button>
             </div>
             <div>
-                <img src={img} alt='hero-img' className='mt-3 h-[45vh] lg:h-[35vh] md:h-[31vh] sm:h-[21vh] xsm:h-[19vh] -rotate-[20deg] duration-700 hover:rotate-0 cursor-pointer object-fill'/>
+                <img src={img} alt='hero-img' className='w-auto mt-3 h-[45vh] lg:h-[35vh] md:h-[31vh] sm:h-[21vh] xsm:h-[19vh] -rotate-[20deg] duration-700 hover:rotate-0 cursor-pointer object-fill'/>
             </div>
         </div>
     </div>
