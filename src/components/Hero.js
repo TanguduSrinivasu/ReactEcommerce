@@ -9,7 +9,7 @@ const Hero = ({heroapi}) => {
   return (
     <>
     <div className='relative h-auto w-auto flex'>
-        <div className='absolute bg-theme h-[85vh] lg:h-[75vh] md:h-[65vh] sm:h-[55vh] w-auto top-0 left-0 right-0 z-10'></div>
+        <div className='absolute bg-theme clip-path h-[85vh] lg:h-[75vh] md:h-[65vh] sm:h-[55vh] w-auto top-0 left-0 right-0 z-10'></div>
         {/* background one with absolute */}
         <div className='z-20 flex flex-col items-center justify-center nike-container'>
             <div className='flex flex-col items-center justify-center mt-28 md:mt-24'>
