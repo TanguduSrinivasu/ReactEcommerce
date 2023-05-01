@@ -41,28 +41,28 @@ const Stories = ({ story }) => {
                   ></img>
                 </div>
                 <div className="flex items-center justify-between w-full px-4">
-                  <div className="flex md:flex-col sm:flex-row items-center gap-0.5">
+                  <div className="flex md:flex-col flex-row lg:flex-row items-center gap-0.5">
                     <HeartIcon className="icon-style text-red-500" />
                     <span className="text-xs font-bold">{story?.like}</span>
                   </div>
-                  <div className="flex md:flex-col sm:flex-row items-center gap-0.5">
+                  <div className="flex md:flex-col flex-row lg:flex-row items-center gap-0.5">
                     <ClockIcon className="icon-style text-black" />
                     <span className="text-xs font-bold">{story?.time}</span>
                   </div>
-                  <div className="flex md:flex-col sm:flex-row items-center gap-0.5 text-blue-600">
+                  <div className="flex md:flex-col flex-row lg:flex-row items-center gap-0.5 text-blue-600">
                     <HashtagIcon className="icon-style text-blue-600" />
                     <span className="text-xs font-bold">{story?.by}</span>
                   </div>
                 </div>
                 <div className="flex flex-col px-4 w-full">
-                  <h1 className="text-base lg:text-sm font-semibold">
+                  <h1 className="lg:text-base text-sm font-semibold">
                     {story?.title}
                   </h1>
-                  <p className="text-sm lg:text-xs text-justify">
+                  <p className="lg:text-sm text-xs text-justify">
                     {story?.text.substring(0, 165)+'...'}
                   </p>
                   <a href={story?.url} target="_blank" rel='noreferrer'>
-                    <button className=" bg-black text-center py-1.5 my-2 w-full text-slate-100 button-theme">
+                    <button className=" bg-black text-center py-1.5 my-2 w-full text-slate-100 button-theme text-sm">
                       {story?.btn}
                     </button>
                   </a>

@@ -10,7 +10,7 @@ const Sales = ({data, ifExists}) => {
   return (
     <div className='nike-container'>
         <Title title={title}/>
-        <div className={`grid items-center gap-7 lg:gap-5 mt-7 ${ifExists ? 'grid-cols-3 xl:grid-cols-2 md:grid-cols-1 sm:grid-cols-1' : 'grid-cols-4 xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1'} mb-5`}>
+        <div className={`grid items-center lg:gap-7 gap-5 mt-7 ${ifExists ? 'xl:grid-cols-3 md:grid-cols-2  grid-cols-1' : 'xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1'} mb-5`}>
             {items.map((item, i) => (
                 <Item key={i} item={item} ifExists={ifExists}/>
             ))}
